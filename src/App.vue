@@ -1,26 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+      <h1 class="text-center text-muted mt-2 mb-4">Buscador Vuex</h1>
+      <vuex-search-form></vuex-search-form>
+      <vuex-search-list></vuex-search-list>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import VuexSearchList from './components/VuexSearchList'
+import VuexSearchForm from './components/VuexSearchForm'
 export default {
-  name: 'app',
   components: {
-    HelloWorld
-  }
+    VuexSearchList,
+    VuexSearchForm
+  },
+  name: 'app',
 }
 </script>
-<style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
-</style>

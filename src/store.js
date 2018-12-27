@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 const filters = () => {
   return {
-    query: 'Tit',
+    query: '',
     from: 2005,
     to: 2015,
     min_price: 0,
